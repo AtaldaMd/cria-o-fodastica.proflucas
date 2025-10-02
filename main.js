@@ -42,5 +42,46 @@ if(altura < 0 || altura > 3.00){
     tdImc.textContent = "altura inválida";
 }
 
+// QUANDO CLICAR NO TITULO, APAREÇA A MENSAGEM
+subtitulo.addEventListener ('click', MostraMensagem);
+
+function MostraMensagem(){
+    alert("Este elemento foi clicado");
+}
 
 }
+
+//acessa o botão
+var botaoAdicionar = document.querySelector("#adicionar paciente");
+//executa os códigos ao clicar no botão
+botaoAdicionar.addEventListener('click', function(event){
+    event.preventDefault();
+
+//acessa o formulário
+var formulario = document.querySelector("#form-adiciona");
+console.log(formulario);
+
+//captura os valores digitados
+var nome = formulario.nome.value;
+var peso = formulario.peso.value;
+var altura = formulario.altura.value;
+var gordura = formulario.gordura.value;
+
+var pacienteTr = document.createElement("tr");
+
+//cria as tags <td>
+var nomeTd = document.createElement("td");
+var pesoTd = document.createElement("td");
+var alturaTd = document.createElement("td");
+var gorduraTd = document.createElement("td");
+var imcTd = document.createElement("td");
+
+nomeTd.textContent = nome;
+pesoTd.textContent = peso;
+alturaTd.textContent  = altura;
+gorduraTd.textContent = gordura;
+imcTd.textContent = imc;
+
+});
+
+
