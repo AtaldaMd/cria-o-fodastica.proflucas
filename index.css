@@ -8,9 +8,9 @@ body{
 }
 
 header{
-	background-color: #333;
-	height: 3em;
-	color: #FFF;
+	background-color:pink;
+	height: 4em;
+	color:black;
 	margin-bottom: 1em;
 }
 
@@ -71,7 +71,7 @@ th{
 }
 
 label{
-	color: #555;
+	color: #f866aa;
 	display: block;
 	margin-bottom: .2em;
 }
@@ -80,7 +80,7 @@ label{
 	margin: 0;
 	padding-bottom: 1em;
 	width: 100%;
-	border: 1px solid #ccc;
+	border: 1px solid #fc7cbc;
 	padding: .7em;
 	width: 100%;
 }
@@ -105,8 +105,8 @@ button{
 	margin: 0;
 	margin-top: -3px;
 	color: #fff;
-	background-color:#0c8cd3;
-	border-color: #04324c;
+	background-color:#f18eb8;
+	border-color: #e762ab;
 	width: 20%;
     display: block;
     clear: both;
@@ -120,7 +120,7 @@ button:active{
 }
 
 button[disabled=disabled], button:disabled {
-    background-color: gray;
+    background-color: rgb(245, 122, 173);
 	border-color: darkgray;
 
 }
